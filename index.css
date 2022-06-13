@@ -1,0 +1,41 @@
+:root {
+  --color: black;
+  --background-color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background-color: var(--background-color);
+}
+
+#container {
+  --padding: 20px;
+  font-family: sans-serif;
+  height: calc(100 - calc(2 * var(--padding)));
+  padding: var(--padding);
+  color: var(--color);
+  max-width: 500px;
+  margin: auto;
+}
+
+#color-toggle {
+  float: right;
+  cursor: pointer;
+}
+
+p {
+  padding-left: 1px;
+  line-height: 120%;
+}
+
+a, a:visited {
+  color: var(--color);
+}
