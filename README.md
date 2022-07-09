@@ -1,12 +1,11 @@
-# Project Hub
+# David Steinberg
 
-This is a simple site that serves as a project hub to share with people. It has
-links to the user-facing pages for various projects.
+This is a simple personal site. It lets people:
 
-### Color
-
-A `color` button in the top right lets you toggle between a random darker color
-background with white text and a white background with random darker color text.
+1. see my head on top of some fun line drawings,
+2. read briefly about me/my approach to creating,
+3. jump to a handful of my projects, and
+4. contact me.
 
 ### Bundling
 
