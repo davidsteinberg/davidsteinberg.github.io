@@ -263,47 +263,13 @@ section.project h4 {
 }
 
 section.project p {
-  /*
-  By putting margin bottom on the section
-  instead of the paragraph inside,
-  the numerals vertically center better
-  */
   margin-bottom: 0;
 }
 
 section.project {
   display: flex;
   align-items: center;
-  margin-bottom: calc(var(--margin-bottom) * 2);
-}
-
-section.project > div.number {
-  --margin-left: 1rem;
-  --margin-right: 2rem;
-  margin-left: var(--margin-left);
-  margin-right: var(--margin-right);
-  color: var(--gray-secondary);
-  width: 4rem;
-  font-size: 2rem;
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: serif;
-}
-
-section.project > div.number:nth-child(2) {
-  margin-left: var(--margin-right);
-  margin-right: var(--margin-left);
-}
-
-@media (max-width: 500px) {
-  section.project > div.number {
-    --margin-left: 0.6rem;
-    --margin-right: 1.4rem;
-    width: 3rem;
-    font-size: 1.4rem;
-  }
+  margin-bottom: calc(var(--margin-bottom) * 1.2);
 }
 
 /* || Contact */
