@@ -45,7 +45,6 @@ const imgs = (()=>{
     const imgs = [
         "bird",
         "butterfly",
-        "jersey",
         "volcano", 
     ];
     const shuffledImgs = [];

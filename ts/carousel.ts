@@ -4,7 +4,7 @@ import { select } from "./dom.ts";
 // Constants
 const imageSwitchIntervalMilliseconds = 6000;
 const imageSwitchDurationMilliseconds =
-  window.matchMedia("(max-width: 500px)").matches ? 300 : 500;
+  window.matchMedia("(max-width: 500px)").matches ? 250 : 500;
 
 // UI
 const home = select("#content-home");
@@ -15,7 +15,6 @@ const imgs = (() => {
   const imgs = [
     "bird",
     "butterfly",
-    "jersey",
     "volcano",
   ];
 
