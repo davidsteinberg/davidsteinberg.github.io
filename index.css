@@ -268,6 +268,7 @@ a[href], a[href]:visited {
 .project img {
   max-height: 10rem;
   border-radius: 0.1rem;
+  border: 1px solid rgba(var(--gray-secondary-rgb), 0.5);
 }
 
 @media (max-width: 500px) {
