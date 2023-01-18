@@ -14,7 +14,7 @@ const imgs = (() => {
   // Shuffle images
   const imgs = [
     "bird",
-    "butterfly",
+    "space",
     "volcano",
   ];
 

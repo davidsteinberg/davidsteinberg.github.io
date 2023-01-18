@@ -44,7 +44,7 @@ const home = select("#content-home");
 const imgs = (()=>{
     const imgs = [
         "bird",
-        "butterfly",
+        "space",
         "volcano", 
     ];
     const shuffledImgs = [];
