@@ -20,14 +20,14 @@ let inDarkMode = true;
 const setLightMode = () => {
   theme.setAttribute("content", lightColor);
   document.body.classList.add("light-mode");
-  window.localStorage.setItem(LIGHT_MODE_PREF_KEY, "");
+  globalThis.localStorage.setItem(LIGHT_MODE_PREF_KEY, "");
   inDarkMode = false;
 };
 
 const setDarkMode = () => {
   theme.setAttribute("content", darkColor);
   document.body.classList.remove("light-mode");
-  window.localStorage.removeItem(LIGHT_MODE_PREF_KEY);
+  globalThis.localStorage.removeItem(LIGHT_MODE_PREF_KEY);
   inDarkMode = true;
 };
 
@@ -41,8 +41,8 @@ const toggleMode = () => {
 
 // Apply appropriate mode on load
 const useLightMode =
-  (window.localStorage.getItem(LIGHT_MODE_PREF_KEY) !== null) ||
-  (window.matchMedia("(prefers-color-scheme: light)").matches);
+  (globalThis.localStorage.getItem(LIGHT_MODE_PREF_KEY) !== null) ||
+  (globalThis.matchMedia("(prefers-color-scheme: light)").matches);
 
 if (useLightMode) {
   setLightMode();

@@ -4,7 +4,7 @@ import { select } from "./dom.ts";
 // Constants
 const imageSwitchIntervalMilliseconds = 6000;
 const imageSwitchDurationMilliseconds =
-  window.matchMedia("(max-width: 500px)").matches ? 250 : 500;
+  globalThis.matchMedia("(max-width: 500px)").matches ? 250 : 500;
 
 // UI
 const home = select("#content-home");
@@ -111,13 +111,13 @@ const intersectionObserver = new IntersectionObserver(
 intersectionObserver.observe(home);
 
 // Stop interval on window blur
-window.onblur = () => {
+globalThis.onblur = () => {
   console.log("Stopping drawing interval (window blur)");
   clearInterval(intervalID);
 };
 
 // Restart interval on window focus
-window.onfocus = () => {
+globalThis.onfocus = () => {
   if (homeTabIsShown) {
     console.log("Restarting drawing interval (window focus, home tab shown)");
     clearInterval(intervalID);
